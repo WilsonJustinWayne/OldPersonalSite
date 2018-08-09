@@ -1,5 +1,10 @@
 .nav-item {
-    margin: 0 2.7em;
+    margin: 0 2em;
+    font-size: 1em;
+}
+
+nav .brand-logo.logo {
+    padding: .2em;
 }
 
 .circle {
