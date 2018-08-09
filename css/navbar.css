@@ -1,0 +1,10 @@
+.nav-item {
+    margin: 0 2.7em;
+}
+
+.circle {
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+    display: inline-block;
+}
