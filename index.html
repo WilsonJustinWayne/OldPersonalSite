@@ -9,38 +9,49 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-
     <title>Justin Wayne Wilson</title>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="icon" type="image/png" href="img/Dewie.png">
-
 </head>
 <body>
-<nav>
-    <div class="nav-wrapper light-green darken-3">
-        <a href="#" class="brand-logo logo center circle light-green darken-3 z-depth-5">
-            <img src="img/Dewie.png" height="93" width="75"/>
-        </a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="left hide-on-med-and-down">
-            <li><a href="#" class="nav-item">About Me</a></li>
-            <li><a href="#" class="nav-item">Proficiency</a></li>
-            <li><a href="#" class="nav-item">Projects</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#" class="nav-item">Button</a></li>
-            <li><a href="#" class="nav-item">Resume</a></li>
-            <li><a href="#" class="nav-item">Contact</a></li>
-        </ul>
+<div id="navbar">
+    <nav>
+        <div class="nav-wrapper light-green darken-3 row">
+            <div class="nav-block col l-4 xl-5">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="#" class="nav-item">About Me</a></li>
+                    <li><a href="#" class="nav-item">Proficiency</a></li>
+                    <li><a href="#" class="nav-item">Projects</a></li>
+                </ul>
+            </div>
+            <div class="col l-4 xl-2">
+                <a href="#" class="brand-logo logo center circle light-green darken-3 z-depth-5">
+                    <img src="img/Dewie.png" height="93" width="75"/>
+                </a>
+            </div>
+            <div class="nav-block col l-4 xl-5 right">
+                <ul class="right hide-on-med-and-down">
+                    <li><a id="testing" href="#" class="nav-item btn">Button</a></li>
+                    <li><a href="#" class="nav-item">Resume</a></li>
+                    <li><a href="#" class="nav-item">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Proficiency</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<div class="row-image">
+    <div class="col s12 main">
+
     </div>
-</nav>
-<ul class="sidenav" id="mobile-demo">
-    <li><a href="#">About Me</a></li>
-    <li><a href="#">Proficiency</a></li>
-    <li><a href="#">Projects</a></li>
-    <li><a href="#">Resume</a></li>
-    <li><a href="#">Contact</a></li>
-</ul>
+</div>
 
 <!---------------------------------------------------------SCRIPTS----------------------------------------------------->
 <!-- JQuery -->
