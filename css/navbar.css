@@ -51,3 +51,7 @@ nav .brand-logo.logo {
 .resume {
     height: 90vh;
 }
+
+#mobile-side-menu {
+    background-color: var(--Brass) !important;
+}
