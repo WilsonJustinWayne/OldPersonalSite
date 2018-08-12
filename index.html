@@ -8,7 +8,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
     <title>Justin Wayne Wilson</title>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="icon" type="image/png" href="img/Dewie.png">
@@ -25,11 +25,9 @@
                     <li><a href="#" class="nav-item">Projects</a></li>
                 </ul>
             </div>
-            <div class="col l-4 xl-2">
-                <a href="#" class="brand-logo logo center circle light-green darken-3 z-depth-5">
-                    <img src="img/Dewie.png" height="93" width="75"/>
-                </a>
-            </div>
+            <a href="#" class="brand-logo logo center circle light-green darken-3 z-depth-5">
+                <img src="img/Dewie.png" height="93" width="75"/>
+            </a>
             <div class="nav-block col l-4 xl-5 right">
                 <ul class="right hide-on-med-and-down">
                     <li><a id="testing" href="#" class="nav-item btn">Button</a></li>
@@ -47,17 +45,47 @@
         <li><a href="#">Contact</a></li>
     </ul>
 </div>
-<div class="row-image">
-    <div class="col s12 main">
-
+<div class="main hide">
+    <div class="main-text center">
+        <h1>Hello, World!<br>
+            I'm Justin Wayne Wilson</h1>
     </div>
 </div>
-
+<div class="about-me hide">
+    <h1>About Me</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi cum eos impedit necessitatibus
+        nihil pariatur perferendis repellat! Aut blanditiis dicta eligendi hic illo laborum necessitatibus officiis,
+        quos recusandae voluptates?</p>
+</div>
+<div class="proficiency hide">
+    <!--use javascript and an api call to grab my proficiencies from a data file and create this section at document load-->
+    <label>My Proficiencies</label>
+    <ul>
+        <li>MySQL</li>
+        <li>Java</li>
+        <li>Javascript/JQuery</li>
+        <li>HTML</li>
+        <li>CSS/Bootstrap/Materialize</li>
+        <li>C#</li>
+        <li>Unity3D</li>
+        <li>Python</li>
+        <li>Visual Basic</li>
+    </ul>
+</div>
+<div class="projects hide">
+    <a href="https://wild-parent.glitch.me">Glitch Thing</a>
+</div>
+<div class="resume center hide">
+    <embed src="img/Justin-Wayne-Wilson-Tblock.pdf" type="application/pdf" height="100%" width="80%">
+</div>
+<div class="contact">
+    <form action=""></form>
+</div>
 <!---------------------------------------------------------SCRIPTS----------------------------------------------------->
 <!-- JQuery -->
 <script src="js/jquery-2.2.4.js"></script>
 <!-- Compiled and minified JavaScript for Materialize -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="js/materialize.min.js"></script>
 <!-- My Scripts -->
 <script src="js/navbar.js"></script>
 </body>

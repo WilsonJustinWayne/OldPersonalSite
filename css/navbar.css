@@ -6,9 +6,14 @@
     --Charleston-Green: #292929;
 }
 
+body {
+    background-color: var(--Charleston-Green);
+}
+
 .nav-item {
     margin: 0 2em;
     font-size: 1em;
+    color: var(--Dark-Vanilla);
 }
 
 nav .brand-logo.logo {
@@ -19,7 +24,6 @@ nav .brand-logo.logo {
     height: 3.5em;
     width: 3.5em;
     border-radius: 50%;
-    display: inline-block;
 }
 
 #testing {
@@ -27,7 +31,21 @@ nav .brand-logo.logo {
 }
 
 .main {
-    background: url("../img/websiteBanner.jpg") no-repeat center;
-    height: auto;
+    position: relative;
+    z-index: 100;
+    max-width: 100%;
+    height: 91vh;
+    background: url("../img/websiteBanner.jpg") no-repeat center center;
     background-size: cover;
+}
+.main-text {
+    float: left;
+    color: var(--Brass);
+}
+
+.logo {
+    z-index: 1000;
+}
+.resume {
+    height: 90vh;
 }
