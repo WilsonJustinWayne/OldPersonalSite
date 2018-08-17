@@ -5,17 +5,15 @@
     --Maximum-Green: #558B2F;
     --Charleston-Green: #292929;
 }
-* {
-    color: white;
-}
+
 body {
-    background-color: var(--Charleston-Green);
+    background-color: var(--Dark-Vanilla);
 }
 
 .nav-item {
     margin: 0 2em;
     font-size: 1em;
-    color: var(--Dark-Vanilla);
+    color: var(--Charleston-Green);
 }
 
 nav .brand-logo.logo {
@@ -42,7 +40,8 @@ nav .brand-logo.logo {
 }
 .main-text {
     float: left;
-    color: var(--Brass);
+    stroke: black;
+    color: var(--Dark-Vanilla);
 }
 
 .logo {
