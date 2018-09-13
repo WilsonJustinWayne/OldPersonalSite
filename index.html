@@ -1,101 +1,166 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <title>Justin Wayne Wilson</title>
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="icon" type="image/png" href="img/Dewie.png">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<title>Justin Wayne Wilson</title>
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="icon" type="image/png" href="img/Dewie.png">
 </head>
 <body>
 <div id="navbar">
-    <nav>
-        <div class="nav-wrapper light-green darken-3 row">
-            <div class="nav-block col l-4 xl-5">
-                <a href="#" data-target="mobile-side-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="left hide-on-med-and-down">
-                    <li><a id="aboutButton" href="#" class="nav-item">About Me</a></li>
-                    <li><a id="proficiencyButton" href="#" class="nav-item">Proficiency</a></li>
-                    <li><a id="projectsButton" href="#" class="nav-item">Projects</a></li>
-                </ul>
-            </div>
-            <a href="#" class="brand-logo logo center circle light-green darken-3 z-depth-4">
-                <img src="img/Dewie.png" height="93" width="75"/>
-            </a>
-            <div class="nav-block col l-4 xl-5 right">
-                <ul class="right hide-on-med-and-down">
-                    <li><a id="bitButton" href="#" class="nav-item btn disabled">8-BIT</a></li>
-                    <li><a id="resumeButton" href="#" class="nav-item">R&eacutesum&eacute</a></li>
-                    <li><a id="contactButton" href="#" class="nav-item">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <ul id="mobile-side-menu" class="sidenav z-depth-5">
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Proficiency</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">R&eacutesum&eacute</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+	<nav>
+		<div class="nav-wrapper light-green darken-3 row">
+			<div class="nav-block col l-4 xl-5">
+					<a id="mainButton" href="#" class="brand-logo right logo circle light-green darken-3 z-depth-4">
+						<img class="logo-img center-block" src="img/Dewie.png"/>
+					</a>
+				<ul id="nav-mobile" class="center hide-on-med-and-down">
+					<li><a id="bitButton" href="#" class="nav-item btn disabled">8-BIT</a></li>
+					<li><a id="aboutButton" href="#" class="nav-item">About Me</a></li>
+					<li><a id="proficiencyButton" href="#" class="nav-item">Proficiency</a></li>
+					<li><a id="projectsButton" href="#" class="nav-item">Projects</a></li>
+					<li><a id="resumeButton" href="#" class="nav-item">R&eacutesum&eacute</a></li>
+					<li><a id="contactButton" href="#" class="nav-item">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 </div>
-<div class="main">
-    <div class="main-text center">
-        <h1>Hello, World!<br>
-            I'm Justin Wayne Wilson</h1>
-    </div>
+<div>
+	<div class="carousel carousel-slider">
+		<div id="main" class="carousel-item active">
+			<div class="item main">
+				<div class="main-text center">
+					<h1>Hello, World!<br>
+						I'm Justin Wayne Wilson</h1>
+				</div>
+			</div>
+		</div>
+		<div id="about" class="carousel-item">
+			<div class="item">
+				<h1>About Me</h1>
+				<p>Ever since I was a child I have always been fascinated with how things worked and how I was going to
+				   be able to put them back together. This drive for solving problems and learning new things will serve
+				   me well as a developer, and I am looking forward to having an enriched, accomplished career. I am a
+				   life-long learner who will have an extensive list of masterfully crafted projects, as well as
+				   fulfilled employers for years to come!</p>
+			</div>
+		</div>
+		<div id="proficiencies" class="carousel-item">
+			<div class="item">
+				<!--use javascript and an api call to grab my proficiencies from a data file and create this section at document load-->
+				<label>My Proficiencies</label>
+				<ul>
+					<li>MySQL</li>
+					<li>Java</li>
+					<li>Spring</li>
+					<li>MYSQL</li>
+					<li>Javascript/JQuery</li>
+					<li>HTML</li>
+					<li>CSS3/Bootstrap/Materialize</li>
+					<li>C#</li>
+					<li>Unity3D</li>
+					<li>Python</li>
+					<li>Visual Basic</li>
+				</ul>
+			</div>
+		</div>
+		<div id="project" class="carousel-item">
+			<div class="item container">
+				<div class="row">
+					<h1 class="center">Projects</h1>
+				</div>
+				<div class="row">
+					<div class="col s12 m6">
+						<div class="card blue-grey darken-1">
+							<div class="card-content white-text" style="background-image: url('img/placeholder.png')">
+								<span class="card-title">Capstone</span>
+								<p><br>Currently In Progress<br><br></p>
+							</div>
+							<div class="card-action">
+								<a href="#">Github Link</a>
+								<a href="#" class="right">Live Link</a>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m6">
+						<div class="card blue-grey darken-1">
+							<div class="card-content white-text" style="background-image: url('img/placeholder.png')">
+								<span class="card-title">MyriadLister</span>
+								<p>I am a very simple card. I am good at containing small bits of information.
+								   I am convenient because I require little markup to use effectively.</p>
+							</div>
+							<div class="card-action">
+								<a href="https://github.com/WilsonJustinWayne/java-adlister-1">Github Link</a>
+								<a href="#" class="right">Live Link</a>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m6">
+						<div class="card blue-grey darken-1">
+							<div class="card-content white-text" style="background-image: url('img/placeholder.png')">
+								<span class="card-title">Roguelike (mobile game)</span>
+								<p>I am a very simple card. I am good at containing small bits of information.
+								   I am convenient because I require little markup to use effectively.</p>
+							</div>
+							<div class="card-action">
+								<a href="#">Github Link</a>
+								<!--<a href="#" class="right">Live Link</a>-->
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m6">
+						<div class="card blue-grey darken-1">
+							<div class="card-content white-text" style="background-image: url('img/placeholder.png')">
+								<span class="card-title">Contacts Manager</span>
+								<p>I am a very simple card. I am good at containing small bits of information.
+								   I am convenient because I require little markup to use effectively.</p>
+							</div>
+							<div class="card-action">
+								<a href="https://github.com/DewStian/contacts-manager">Github Link</a>
+								<!--<a href="#" class="right">Live Link</a>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="resume" class="carousel-item">
+			<div class="item center">
+				<embed class="z-depth-5" src="img/Justin-Wayne-Wilson-Tblock.pdf" type="application/pdf" height="610"
+					   width="80%">
+			</div>
+		</div>
+		<div id="contact" class="carousel-item">
+			<div class="item">
+				<!--icon-->mobile phone
+				<br>
+				<!--icon-->email
+				<br>
+				<!--icon-->linkedin
+				<!--card-->
+				<form action="">
+					name
+					<br>
+					Company (optional)
+					<br>
+					email
+					<br>
+					subject - select{Hiring, freelance work, personal, other}
+					<br>
+					email body
+				</form>
+			</div>
+		</div>
+	</div>
 </div>
-<div class="about-me hide">
-    <h1>About Me</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi cum eos impedit necessitatibus
-        nihil pariatur perferendis repellat! Aut blanditiis dicta eligendi hic illo laborum necessitatibus officiis,
-        quos recusandae voluptates?</p>
-</div>
-<div class="proficiency hide">
-    <!--use javascript and an api call to grab my proficiencies from a data file and create this section at document load-->
-    <label>My Proficiencies</label>
-    <ul>
-        <li>MySQL</li>
-        <li>Java</li>
-        <li>Javascript/JQuery</li>
-        <li>HTML</li>
-        <li>CSS3/Bootstrap/Materialize</li>
-        <li>C#</li>
-        <li>Unity3D</li>
-        <li>Python</li>
-        <li>Visual Basic</li>
-    </ul>
-</div>
-<div class="projects hide">
-    <a href="https://wild-parent.glitch.me">Glitch Thing</a>
-</div>
-<div class="resume center hide">
-    <embed src="img/Justin-Wayne-Wilson-Tblock.pdf" type="application/pdf" height="100%" width="80%">
-</div>
-<div class="contact hide">
-    <!--icon-->mobile phone
-    <br>
-    <!--icon-->email
-    <br>
-    <!--icon-->linkedin
-    <!--card-->
-    <form action="">
-        name
-        <br>
-        Company (optional)
-        <br>
-        email
-        <br>
-        subject - select{Hiring, freelance work, personal, other}
-        <br>
-        email body
-    </form>
 </div>
 <!---------------------------------------------------------SCRIPTS----------------------------------------------------->
 <!-- JQuery -->

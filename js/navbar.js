@@ -1,45 +1,52 @@
 (function () {
     "use strict";
 
-    const aboutMeButton = $('#about-meButton');
-    const aboutMePage = $('.about-me');
+    const carousel = $('.carousel');
+    let instance;
+    // const mainButton = ;
+    const aboutMeButton = $('#aboutButton');
+    // const aboutMePage = $('.about');
     const proficiencyButton = $('#proficiencyButton');
-    const proficiencyPage = $('.proficiency');
+    // const proficiencyPage = $('.proficiency');
     const projectsButton = $('#projectsButton');
-    const projectsPage = $('.projects');
+    // const projectsPage = $('.projects');
     const bitButton = $('#bitButton');
     const resumeButton = $('#resumeButton');
-    const resumePage = $('.resume');
+    // const resumePage = $('.resume');
     const contactButton = $('#contactButton');
-    const contactPage = $('.contact');
-    const list = [aboutMePage, proficiencyPage, projectsPage, resumePage, contactPage];
+    // const contactPage = $('.contact');
 
-    // function switchTabs(visible/*, list*/) {
-        // console.log(list);
-
-        // for (let i = 0; i < list.length; i++) {
-            // console.log(list[i]);
-            // console.log("checking index " + i);
-            // console.log(list[i].name)
-            // if (!i.classList.contains("hide")) {
-            //     i.addClass("hide");
-            // }
-        // }
-        // visible.removeClass("hide");
-    // }
-
-    $(document).ready(function () {
-        $('.sidenav').sidenav();
+    $(document).ready(() => {
+        instance = M.Carousel.getInstance(carousel);
+        M.toast({html: 'I am a toast!'});
+        $('.carousel').carousel({
+            fullWidth: true,
+            numVisible: 6
+        });
     });
 
-    // aboutMeButton.click(switchTabs(aboutMePage/*, list*/));
-    //
-    // proficiencyButton.click(switchTabs(proficiencyPage/*, list*/));
-    //
-    // projectsButton.click(switchTabs(projectsPage/*, list*/));
-    //
-    // resumeButton.click(switchTabs(resumePage/*, list*/));
-    //
-    // contactButton.click(switchTabs(contactPage/*, list*/));
-//
+    $('#mainButton').click(function () {
+        $('.carousel.carousel-slider').carousel('set', 0);
+    });
+
+    aboutMeButton.click(function () {
+        $('.carousel.carousel-slider').carousel('set', 1);
+    });
+
+    proficiencyButton.click(function () {
+        $('.carousel.carousel-slider').carousel('set', 2);
+    });
+
+    projectsButton.click(function () {
+        $('.carousel.carousel-slider').carousel('set', 3);
+    });
+
+    resumeButton.click(function () {
+        $('.carousel.carousel-slider').carousel('set', 4);
+    });
+
+    contactButton.click(function () {
+        $('.carousel.carousel-slider').carousel('set', 5);
+    });
+
 })();
