@@ -3,7 +3,7 @@
 
     const carousel = $('.carousel');
     let instance;
-    // const mainButton = ;
+    const mainButton = $('#mainButton');
     const aboutMeButton = $('#aboutButton');
     // const aboutMePage = $('.about');
     const proficiencyButton = $('#proficiencyButton');
@@ -19,13 +19,14 @@
     $(document).ready(() => {
         instance = M.Carousel.getInstance(carousel);
         M.toast({html: 'I am a toast!'});
+        $('select').formSelect();
         $('.carousel').carousel({
             fullWidth: true,
             numVisible: 6
         });
     });
 
-    $('#mainButton').click(function () {
+    mainButton.click(function () {
         $('.carousel.carousel-slider').carousel('set', 0);
     });
 
