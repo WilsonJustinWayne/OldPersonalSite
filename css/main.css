@@ -129,13 +129,17 @@ nav .brand-logo.logo {
     margin: 0;
 }
 
+.margin-left {
+    margin-left: 1em;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-
 
 }
 
