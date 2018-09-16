@@ -13,7 +13,7 @@
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<title>Justin Wayne Wilson</title>
-	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="icon" type="image/png" href="img/Dewie.png">
 </head>
 <body>
@@ -136,8 +136,30 @@
 	</div>
 	<div id="resume" class="carousel-item">
 		<div class="item center">
-			<embed class="z-depth-5" src="img/Justin-Wayne-Wilson-Tblock.pdf" type="application/pdf" height="610"
-				   width="80%">
+			<div class="container">
+				<div class="row center">
+					<div class="col s12 center">
+						<h1>My Resume</h1>
+					</div>
+				</div>
+				<div class="row center">
+					<div class="col m2 hide-on-small-and-down center"></div>
+					<div class="col s12 m8 center">
+						<a href="img/Justin-Wayne-Wilson-Tblock.pdf" download="Justin Wayne Wilson's Resume"
+						   class="center">
+							<div class="card-panel light-green darken-3 z-depth-5 center-block round-edge">
+								<div class="card light-green darken-3 center-block round-edge margin">
+									<div class="card-image waves-effect waves-block waves-light round-edge">
+										<img class="activator round-edge" src="img/placeholder.png">
+										<span class="card-title center-block">CLICK HERE TO DOWNLOAD MY RESUME</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col m2 hide-on-small-and-down center"></div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="contact" class="carousel-item">
@@ -164,12 +186,12 @@
 			<hr>
 			<div class="row">
 				<div class="m2 hide-on-small-and-down"></div>
-				<form class="col s12" action="https://www.enformed.io/424la7no" method="POST" >
-					<input type="hidden" name="*honeypot" />
+				<form class="col s12" action="https://www.enformed.io/424la7no" method="POST">
+					<input type="hidden" name="*honeypot"/>
 					<div class="row">
 						<div class="input-field col s6">
 							<i class="material-icons prefix">account_circle</i>
-							<input id="name" type="text" class="validate">
+							<input id="name" type="text" class="validate" name="Name">
 							<label for="name">Name</label>
 						</div>
 						<div class="input-field col s6 center-align">
@@ -179,11 +201,11 @@
 					<div class="row">
 						<div class="input-field col s6">
 							<i class="material-icons prefix">business</i>
-							<input id="company" type="text" class="validate" name="company">
+							<input id="company" type="text" class="validate" name="Company">
 							<label for="company">Company (optional)</label>
 						</div>
 						<div class="input-field col s6">
-							<select id="reason" name="reason-for-email">
+							<select id="reason" name="Reason For Email">
 								<option value="hiring" selected>Hiring</option>
 								<option value="freelance work">Freelance Work</option>
 								<option value="personal">Personal</option>
@@ -195,14 +217,14 @@
 					<div class="row">
 						<div class="input-field col s12">
 							<i class="material-icons prefix">email</i>
-							<input id="email" type="email" class="validate" name="return-email">
+							<input id="email" type="email" class="validate" name="Return Email">
 							<label for="email">Email</label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="input-field col s10">
 							<i class="material-icons prefix">chat</i>
-							<textarea id="textarea1" class="materialize-textarea" name="Body"></textarea>
+							<textarea id="textarea1" class="materialize-textarea" name="Message"></textarea>
 							<label for="textarea1">Textarea</label>
 						</div>
 						<div class="col s2">
