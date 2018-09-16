@@ -14,8 +14,13 @@ h5 {
     color: var(--Charleston-Green);
 }
 
-.container {
-    overflow: scroll;
+#mainBody {
+    overflow: visible;
+}
+
+.carousel {
+    overflow-y: scroll;
+    height: 91vh;
 }
 
 .nav-item {
@@ -64,10 +69,6 @@ nav .brand-logo.logo {
 .logo-img {
     height: 93px;
     width: 75px;
-}
-
-.carousel {
-    height: 91vh;
 }
 
 .input-field {
@@ -134,6 +135,7 @@ nav .brand-logo.logo {
         height: 100%;
         overflow: hidden
     }
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
