@@ -148,7 +148,7 @@
 				</div>
 				<div class="col s6 right-align">
 					<a href="https://www.linkedin.com/in/wilson-jusin-wayne/">
-						<h5>LinkedIn <i class="fab fa-linkedin"></i></h5>
+						<h5>My LinkedIn <i class="fab fa-linkedin"></i></h5>
 					</a>
 				</div>
 				<div class="col s6">
@@ -156,7 +156,7 @@
 				</div>
 				<div class="col s6 right-align">
 					<a href="https://github.com/WilsonJustinWayne/">
-						<h5>github <i class="fab fa-github-square"></i></h5>
+						<h5>My Github <i class="fab fa-github-square"></i></h5>
 					</a>
 				</div>
 			
@@ -164,7 +164,8 @@
 			<hr>
 			<div class="row">
 				<div class="m2 hide-on-small-and-down"></div>
-				<form class="col s12">
+				<form class="col s12" action="https://www.enformed.io/424la7no" method="POST" >
+					<input type="hidden" name="*honeypot" />
 					<div class="row">
 						<div class="input-field col s6">
 							<i class="material-icons prefix">account_circle</i>
@@ -178,11 +179,11 @@
 					<div class="row">
 						<div class="input-field col s6">
 							<i class="material-icons prefix">business</i>
-							<input id="company" type="text" class="validate">
+							<input id="company" type="text" class="validate" name="company">
 							<label for="company">Company (optional)</label>
 						</div>
 						<div class="input-field col s6">
-							<select id="reason">
+							<select id="reason" name="reason-for-email">
 								<option value="hiring" selected>Hiring</option>
 								<option value="freelance work">Freelance Work</option>
 								<option value="personal">Personal</option>
@@ -194,18 +195,18 @@
 					<div class="row">
 						<div class="input-field col s12">
 							<i class="material-icons prefix">email</i>
-							<input id="email" type="email" class="validate">
+							<input id="email" type="email" class="validate" name="return-email">
 							<label for="email">Email</label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="input-field col s10">
 							<i class="material-icons prefix">chat</i>
-							<textarea id="textarea1" class="materialize-textarea"></textarea>
+							<textarea id="textarea1" class="materialize-textarea" name="Body"></textarea>
 							<label for="textarea1">Textarea</label>
 						</div>
 						<div class="col s2">
-							<button class="btn waves-effect waves-light" type="submit" name="action">Send Email
+							<button class="btn waves-effect waves-light" type="submit" name="send">Send Email
 								<i class="material-icons right">send</i>
 							</button>
 						</div>
