@@ -165,18 +165,18 @@
 	<div id="contact" class="carousel-item">
 		<div class="item container">
 			<div class="row">
-				<div class="col s6">
+				<div class="col s12 m6">
 					<h5><i class="fas fa-phone-square"></i> (210) 317-1004</h5>
 				</div>
-				<div class="col s6 right-align">
+				<div class="col s7 m6 right-align">
 					<a href="https://www.linkedin.com/in/wilson-jusin-wayne/">
 						<h5>My LinkedIn <i class="fab fa-linkedin"></i></h5>
 					</a>
 				</div>
-				<div class="col s6">
-					<h5><i class="fas fa-envelope"></i> WilsonJustinWayne@gmail.com</h5>
+				<div class="col s12 m6">
+					<h5><i class="fas fa-envelope"></i> wilsonjustinwayne@<br>gmail.com</h5>
 				</div>
-				<div class="col s6 right-align">
+				<div class="col m6 right-align">
 					<a href="https://github.com/WilsonJustinWayne/">
 						<h5>My Github <i class="fab fa-github-square"></i></h5>
 					</a>
@@ -191,7 +191,7 @@
 					<div class="row">
 						<div class="input-field col s6">
 							<i class="material-icons prefix">account_circle</i>
-							<input id="name" type="text" class="validate" name="Name">
+							<input id="name" type="text" class="validate" name="Name" required>
 							<label for="name">Name</label>
 						</div>
 						<div class="input-field col s6 center-align">
@@ -202,10 +202,10 @@
 						<div class="input-field col s6">
 							<i class="material-icons prefix">business</i>
 							<input id="company" type="text" class="validate" name="Company">
-							<label for="company">Company (optional)</label>
+							<label for="company">Company</label>
 						</div>
 						<div class="input-field col s6">
-							<select id="reason" name="Reason For Email">
+							<select id="reason" name="Reason For Email" required>
 								<option value="hiring" selected>Hiring</option>
 								<option value="freelance work">Freelance Work</option>
 								<option value="personal">Personal</option>
@@ -217,14 +217,14 @@
 					<div class="row">
 						<div class="input-field col s12">
 							<i class="material-icons prefix">email</i>
-							<input id="email" type="email" class="validate" name="Return Email">
+							<input id="email" type="email" class="validate" name="Return Email" required>
 							<label for="email">Email</label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="input-field col s10">
 							<i class="material-icons prefix">chat</i>
-							<textarea id="textarea1" class="materialize-textarea" name="Message"></textarea>
+							<textarea id="textarea1" class="materialize-textarea" name="Message" required></textarea>
 							<label for="textarea1">Textarea</label>
 						</div>
 						<div class="col s2">
