@@ -14,13 +14,13 @@ h5 {
     color: var(--Charleston-Green);
 }
 
-#mainBody {
-    overflow: visible;
-}
 
 .carousel {
-    overflow-y: scroll;
     height: 91vh;
+}
+
+.carousel-item {
+    overflow-y: scroll;
 }
 
 .nav-item {
