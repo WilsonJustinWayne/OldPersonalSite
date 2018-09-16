@@ -6,6 +6,12 @@
     --Charleston-Green: #292929;
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
 body {
     background-color: var(--Granny-Smith-Apple);
 }
@@ -129,11 +135,7 @@ nav .brand-logo.logo {
 
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    html, body {
-        margin: 0;
-        height: 100%;
-        overflow: hidden
-    }
+
 
 }
 
