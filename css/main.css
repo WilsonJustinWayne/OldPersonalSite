@@ -7,20 +7,19 @@
 }
 
 body {
-    background-color: var(--Dark-Vanilla);
+    background-color: var(--Granny-Smith-Apple);
 }
 
 h5 {
     color: var(--Charleston-Green);
 }
 
-
 .carousel {
     height: 91vh;
 }
 
 .carousel-item {
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .nav-item {
